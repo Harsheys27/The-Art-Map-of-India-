@@ -15,3 +15,11 @@ From **Madhubani in Bihar to Chola bronzes in Tamil Nadu**, the platform connect
 - 📚 **Educational Archive** — A structured resource for learning about Indian cultural heritage
 
 > **Preserving India's artistic memory, one region at a time.**
+
+Author
+
+Harshit Chaturvedi
+
+B.Tech Computer Science and Engineering SRM Institute of Science and Technology
+
+
