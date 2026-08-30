@@ -16,10 +16,12 @@ From **Madhubani in Bihar to Chola bronzes in Tamil Nadu**, the platform connect
 
 > **Preserving India's artistic memory, one region at a time.**
 
-Author
+#  Author
 
-Harshit Chaturvedi
+**Harshit Chaturvedi**
 
-B.Tech Computer Science and Engineering SRM Institute of Science and Technology
+B.Tech Computer Science and Engineering
+SRM Institute of Science and Technology
 
+---
 
