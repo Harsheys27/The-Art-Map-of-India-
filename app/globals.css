@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: var(--font-serif), "Cormorant Garamond", Georgia, serif;
+    --font-display: var(--font-display), "Cinzel", Georgia, serif;
+    --font-sans: var(--font-sans), "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    background-color: #09090c;
+    color: #ede5d8;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, .font-serif-title {
+    font-family: var(--font-serif);
+  }
+
+  .font-display-title {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b2721;
+  border-radius: 4px;
+  border: 1px solid #3d3528;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c59b27;
+}
+
+/* Gold Gradient Text & Accents */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #f6e6b4 0%, #d4af37 50%, #aa801e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-silver-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #d1d5db 50%, #9ca3af 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold-subtle {
+  border-color: rgba(212, 175, 55, 0.25);
+}
+
+.border-gold-glow {
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+}
+
+.bg-gold-glass {
+  background: rgba(18, 17, 23, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Subtle Indian Jaali & Canvas Pattern Overlay */
+.bg-canvas-pattern {
+  background-color: #09090c;
+  background-image: 
+    radial-gradient(rgba(212, 175, 55, 0.04) 1px, transparent 0),
+    radial-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 0);
+  background-size: 24px 24px, 12px 12px;
+  background-position: 0 0, 6px 6px;
+}
+
+.bg-jaali-subtle {
+  background-image: radial-gradient(rgba(197, 155, 39, 0.07) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+/* Map Pulse Animation */
+@keyframes markerPulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 14px rgba(212, 175, 55, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+  }
+}
+
+.animate-marker-pulse {
+  animation: markerPulse 2.4s infinite cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+/* Smooth Glow Transitions */
+.gold-glow-hover {
+  transition: all 0.3s ease-in-out;
+}
+.gold-glow-hover:hover {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.22);
+  border-color: rgba(212, 175, 55, 0.55);
+}
